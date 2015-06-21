@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BanksAndPatrons/main.m"
-            timestampString = "456594800.120485"
+            timestampString = "456599025.810135"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "@implementation Patron"
             landmarkType = "3">
          </BreakpointContent>
