@@ -18,7 +18,7 @@
 @implementation BankAccount
 
 - (void) printBalance {
-    NSLog(@"Balance has: $%d \n", self.balance);
+    NSLog(@"Account # %d has balance: $%d \n", self.acctNumber, self.balance);
 }
 
 @end
@@ -31,7 +31,6 @@
 - (void)withdraw: (BankAccount*)account :(int)amount;
 - (void)deposit: (BankAccount *)account :(int)amount;
 - (void)printPocket;
-- (NSMutableArray *) myArray;
 
 @end
 
@@ -155,22 +154,24 @@ int main(int argc, const char * argv[]) {
         [b printPocket];
         [acct4 printBalance];
         
-    
+        NSLog(@"Person c: \n");
         [c withdraw:acct4 :5];
         [c printPocket];
+        [c withdraw: acct1 :1000];
+        [c deposit: acct5 : 1000];
+        [c deposit: acct2 : 500];
         [acct1 printBalance];
+        [acct5 printBalance];
     
     
-    
-    
-        for (int i = 0; i < a.bankAccounts.count; i++) {
-            NSLog(@"%@", [a.bankAccounts objectAtIndex:i]);
-        }
-        
-        for (BankAccount *account in a.bankAccounts) {
-            NSLog(@"%@", account);
-        }
-    
+//        for (int i = 0; i < a.bankAccounts.count; i++) {
+//            NSLog(@"%@", [a.bankAccounts objectAtIndex:i]);
+//        }
+//        
+//        for (BankAccount *account in a.bankAccounts) {
+//            NSLog(@"%@", account);
+//        }
+//    
     
     
     
